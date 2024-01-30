@@ -1,102 +1,55 @@
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-body > header{
-    background-color: #2f3640;
-    padding: 16px 0;
-    color: #fff;
-}
-header .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-header li{
-    display: inline;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    margin-left: 16px;
-}
-header li a{
-    color: white;
-    text-decoration: none;
+    box-sizing: border-box;
 }
 .container{
-    width: 1366px;
+    width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
 }
-.articles {
+.container h1{
+    margin: 40px 0 30px;
+    text-align: center;
+}
+.container form{
+    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
-.articles article img{
-    width: 100%;
+.container form input,
+.container form button{
+    width: 380px;
+    padding: 10px 20px;
+    margin: 10px;
 }
-.articles article{
-    width: 30%;
-}
-section{
-    padding: 16px 0;
-}
-section h2,
-.articles article{
-    margin: 0 0 16px 0;
-}
-.articles article h3{
-    margin:  8px 0;
-}
-
-.articles article a{
-    background-color: blue;
-    color: white;
-    padding: 8px;
-    display: inline-block;
-    text-decoration: none;
+.container form button{
+    background-color: rgb(196, 228, 141);
+    border: 1px solid #948f8f;
     font-weight: bold;
-    margin-top: 8px;
-}
-.articles article a:hover{
-    text-decoration: underline;
-}
-.articles article p,
-.articles article a{
-    font-family: 'Arial', 'Helvetica', 'sans-serif';
-}
-.articles article h3{
-    font-size: 24px;
-}
-section h2{
-    font-size: 32px;
+    color: #948f8f;
+    transition: 0.1s;
 }
 
-#sports{
-    background-color: rgba(0, 255, 0, 0.1);
+/*Classe pra quando o botão estiver habilitado*/
+.btn-ativo{
+    cursor: pointer;
+    background-color: greenyellow !important; 
+    border: 1px solid #4e4d4d;
+    color: black;
+    transition: 0.2s;
 }
-#sports .articles article a{
-    background-color: #009432;
+.btn-ativo:hover{
+    scale: 1.03;
 }
-#economy{
-    background-color: #fffa65;
+.hiden{
+    display: none !important;
 }
-#economy .articles article a{
-    background-color: #ff9f1a;
+.error{
+    outline: 2px solid red;
 }
-#entertainment{
-    background-color: rgba(17, 17, 17, 0.2);
+#mensagemErro {
+    color: red;
+    margin: 5px 0;
 }
-#entertainment .articles article a{
-    background-color: #020202;
-}
-#technology{
-    background-color: rgba(202, 8, 8, 0.3);
-}
-#technology .articles article a{
-    background-color: #ff0000;
-}
-
-
-
