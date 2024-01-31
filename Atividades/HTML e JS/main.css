@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.container h1{
+    margin: 40px 0 30px;
+    text-align: center;
+}
+.container form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container form input,
+.container form button{
+    width: 380px;
+    padding: 10px 20px;
+    margin: 10px;
+}
+#btnEnviar{
+    cursor: pointer;
+    background-color: greenyellow ; 
+    border: 1px solid #4e4d4d;
+    color: black;
+    transition: 0.2s;
+}
+#btnEnviar:disabled{
+    background-color: rgb(196, 228, 141);
+    border: 1px solid #948f8f;
+    font-weight: bold;
+    color: #948f8f;
+    transition: 0.1s;
+}
+
+/*Classe pra quando o botão estiver habilitado*/
+.btn-ativo:hover{
+    scale: 1.03;
+}
+.error{
+    outline: 2px solid red;
+}
+.hiden{
+    display: none ;
+}
+#mensagemErro {
+    color: red;
+    margin: 5px 0;
+}
