@@ -1,0 +1,1 @@
+function somarNumeros(r,n){return r+n}
