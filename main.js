@@ -13,4 +13,6 @@ function Toyota (nome, anoFabricacao, anoModelo){
 }
 const carro1 = new Ford("New Fiesta", 2018, 2019)
 const carro2 = new Toyota("Corolla", 2023, 2023)
-console.log(carro1, carro2)
+const carro3 = new Toyota("Etyos", 2022, 2023)
+const carro4 = new Ford("Ka", 2004, 2005)
+console.log(carro1, carro2, carro3, carro4)
